@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta lang="de">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>jQuery Serialshuffle Plugin </title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+  <div class="container" style="text-align:center">
+    <p class="lead">SVG Shuffle Animation</p>
+    <div id="example">
+      <ul class="js-serialshuffle">
+        <li><img src="./img/taskit-logo-stamp.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-com.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-gpio1.svg" alt=""></li>
+        <li><img src="./img/taskit-logo-gpio.net.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-gpio-ipcore.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-gpio-module.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-gpio-module-gsm.svg" alt=""></li>
+        <li><img src="./img/taskit-logo-vaultsec.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-hmi.svg" alt=""></li>
+        <li><img src="./img/taskit-icon-sbc.svg" alt=""></li>
+        <li><img src="./img/taskit-logo-portux.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.serialshuffle.js"></script>
+    <script>
+      $(document).ready(function(){
+          // jquery.serialshuffle initialisation
+          $('.js-serialshuffle').serialshuffle({
+            folder: './img/',
+            shuffle: ['hugo-logo.svg', 'taskit-logo.svg', 'taskit-logo-gpio.net.svg'],
+            speed: 500
+          });
+        });
+    </script>
+</body>
+</html>
